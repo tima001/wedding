@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "@emotion/styled";
-
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+</style>;
 const InvitationText = () => {
   return (
     <TextContentWrapper>
       <TitleText>Құрметті қонақтар!</TitleText>
       <ContentText>
-        Ciз(дер)дi аяулы қызымыз <br /> Аселдің <br /> "Қыз ұзату" тойына
+        Ciз(дер)дi аяулы қызымыз <br /> Әселдің <br /> "Қыз ұзату" тойына
         арналған <br /> салтанатты дастарханымыздың <br />
         қадiрлi қонағы болуға шақырамыз!
       </ContentText>
@@ -21,9 +24,20 @@ const TextContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 12px;
 `;
 
-const TitleText = styled.h2``;
+const TitleText = styled.h2`
+  font-size: 52px;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 200;
+`;
 const ContentText = styled.h2`
+  font-family: "Nunito", sans-serif;
+  line-height: 160%;
+  font-weight: 200;
   text-align: center;
+  font-size: 22px;
+  margin: 0;
 `;
