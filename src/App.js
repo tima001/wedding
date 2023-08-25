@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PhotoWithHeader from "./pages/PhotoWithHeader";
+import InvitationText from "./pages/InvitationText";
+import styled from "@emotion/styled";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContentWrapper>
+      <PhotoWithHeader />
+      <InvitationText />
+      {/*
+      <RoadMapContent/>
+     <TimerWithPhoto/>
+     <OwnersInfo>
+     <FormContent/> */}
+    </ContentWrapper>
   );
 }
 
 export default App;
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+`;
