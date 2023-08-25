@@ -117,7 +117,7 @@ const TitleDay = styled.div`
     margin: 0;
   }
 `;
-const Line = styled.h3`
+const Line = styled.div`
   @media (max-width: 425px) {
     background: rgba(255, 255, 255, 0.5);
     height: 73px;

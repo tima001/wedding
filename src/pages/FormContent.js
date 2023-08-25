@@ -9,27 +9,27 @@ import FormLabel from "@mui/material/FormLabel";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
+import Alert from "@mui/material/Alert";
 import axios from "axios";
 const FormContent = () => {
-  const [name, setName] = useState(""); // State to store the name
+  const [name, setName] = useState("");
   const [participationStatus, setParticipationStatus] = useState("қатысамын");
+  const [open, setOpen] = useState(true);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const handleSend = () => {
-    // Construct the message text using the form data
     const messageText = `Аты-жөні: ${name}  Қатысуы: ${participationStatus}`;
-
-    // Make an API request to the Telegram Bot API
     axios
       .post(
         `https://api.telegram.org/bot6557386352:AAEbMqo56A1KsSkrsWfWfSICNqTah91w_ec/sendMessage?chat_id=@uzatuadamsany&text=${messageText}`
       )
       .then((response) => {
         console.log("Message sent:", response.data);
-        // Handle success if needed
+        setSubmissionStatus("success");
       })
       .catch((error) => {
         console.error("Error sending message:", error);
-        // Handle error if needed
+        setSubmissionStatus("error");
       });
   };
   return (
@@ -40,7 +40,6 @@ const FormContent = () => {
         <br />
         жазуыңызды өтінеміз)
       </TitleText>
-      {/* <img src={line} alt="Background line " /> */}
       <FormControl
         style={{
           width: "-webkit-fill-available",
@@ -75,6 +74,16 @@ const FormContent = () => {
             label="қатыса алмаймын"
           />
         </RadioGroup>
+        {submissionStatus === "success" && (
+          <Alert severity="success" onClose={() => {}}>
+            Сіздің жауабыңыз сәтті сақталды!
+          </Alert>
+        )}
+        {submissionStatus === "error" && (
+          <Alert severity="error" onClose={() => {}}>
+            Сіздің жауабыңыз сақталмады.Тағы да байқап көріңіз!
+          </Alert>
+        )}
         <Button variant="contained" onClick={handleSend} endIcon={<SendIcon />}>
           Send
         </Button>
@@ -93,7 +102,6 @@ const TextContentWrapper = styled.div`
 `;
 
 const TitleText = styled.h2`
-  /* font-size: 36px; */
   letter-spacing: 2px;
   text-align: start;
   margin: 0;
