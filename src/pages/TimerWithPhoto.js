@@ -89,7 +89,8 @@ const MainTitleName = styled.h3`
     @media (max-width: 400px) {
       margin-left: 74px;
     }
-    @media (max-width: 375px) {
+    
+    @media (max-width: 384px) {
       font-size: 42px;
       margin-left: 60px;
       margin-top: 260px;
@@ -132,7 +133,7 @@ const Line = styled.div`
     border-radius: 10px;
     margin: 0;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 384px) {
     background: rgba(255, 255, 255, 0.5);
     height: 64px;
     width: 2px;
@@ -153,7 +154,7 @@ const TimerWrapper = styled.div`
   @media (max-width: 410px) {
     margin-left: 43px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 384px) {
     display: flex;
     margin-top: 0;
     margin-left: 40px;
