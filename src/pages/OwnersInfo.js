@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
+  import Line from '../img/LineBg.png'
+  import flower from '../img/flower.png'
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
@@ -8,10 +10,12 @@ const OwnersInfo = () => {
   return (
     <InformationTextWrapper>
       <TextContentWrapper>
+        <img src={flower} style={{width: '160px' }}/>
         <TitleText>Той иелері</TitleText>
-        <ContentText>Жанат-Айжан</ContentText>
+        <TitleText>Жанат-Айжан</TitleText>
       </TextContentWrapper>
-      <TitleText>Қадірлі қонағымыз болыңыздар!</TitleText>
+      {/* <TitleText>Қадірлі қонағымыз болыңыздар!</TitleText> */}
+      <img src={Line} style={{width:'100%'}}/>
       <MainContentWrapper>
         <TitleText>
           Тойға қатысуыңызды <br /> растауыңызды сұраймыз!
@@ -43,6 +47,10 @@ const TitleText = styled.h2`
   letter-spacing: 2px;
   margin: 0;
   font-weight: 200;
+  @media(max-width:320px){
+    font-size: 36px;
+    
+  }
 `;
 
 const ContentText = styled.h2`
@@ -57,5 +65,5 @@ const InformationTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
+  gap: 80px;
 `;

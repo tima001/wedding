@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styled from "@emotion/styled";
 import ymaps from "ymaps";
-
+<script src="https://api-maps.yandex.ru/2.1.77/?apikey=cd23e731-4e08-47f8-9fde-467e93ccaab3&lang=ru_RU&csp=true&" type="text/javascript"></script>
 const RoadMapContent = () => {
   const mapRef = useRef(null);
   ymaps
@@ -13,7 +13,6 @@ const RoadMapContent = () => {
       });
 
       const marker = new maps.Placemark([42.9043219, 71.3375716]);
-      console.log(marker);
 
       mapInstance.geoObjects.add(marker);
     })

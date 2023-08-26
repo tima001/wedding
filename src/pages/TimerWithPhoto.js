@@ -77,41 +77,50 @@ export default PhotoWithHeader;
 const MainTitleName = styled.h3`
   @media (max-width: 425px) {
     color: #fff;
-    font-family: KZ Balmoral;
-    font-size: 43.103px;
+    font-size: 44px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.509px;
-    margin-left: 85px;
+    margin-left: 90px;
     margin-top: 260px;
-  }
-  @media (max-width: 375px) {
-    position: absolute;
-    font-size: 48px;
-    color: #fff;
-    margin-left: 150px;
-    margin-top: 520px;
-    text-align: center;
-    font-weight: 100;
-  }
-  @media (max-width: 320px) {
-    position: absolute;
-    font-size: 42px;
-    color: #fff;
-    margin-left: 130px;
-    margin-top: 500px;
-    text-align: center;
-    font-weight: 100;
+    margin-bottom:42px;
+    @media (max-width: 375px) {
+      font-size: 42px;
+      margin-left: 65px;
+      margin-top: 260px;
+      margin-bottom:32px;
+    }
+    @media (max-width: 320px) {
+      font-size: 36px;
+      margin-left: 54px;
+      margin-top: 200px;
+      margin-bottom:16px;
   }
 `;
 const TitleDay = styled.div`
   @media (max-width: 425px) {
     color: #fff;
-    font-size: 48px;
+    font-size: 44px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
+    line-height: 70%;
+    letter-spacing: 1.509px;
+    margin: 0;
+  }
+  @media (max-width: 375px) {
+    color: #fff;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 70%;
+    letter-spacing: 1.509px;
+    margin: 0;
+  }
+  @media (max-width: 320px) {
+    font-size: 38px;
     line-height: 70%;
     letter-spacing: 1.509px;
     margin: 0;
@@ -125,9 +134,24 @@ const Line = styled.div`
     border-radius: 10px;
     margin: 0;
   }
+  @media (max-width: 375px) {
+    background: rgba(255, 255, 255, 0.5);
+    height: 64px;
+    width: 2px;
+    border-radius: 10px;
+    margin: 0;
+  }
 `;
 const TimerWrapper = styled.h3`
   @media (max-width: 425px) {
+    display: flex;
+    margin-top: 0;
+    margin-left: 60px;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+  }
+  @media (max-width: 375px) {
     display: flex;
     margin-top: 0;
     margin-left: 40px;
@@ -135,6 +159,10 @@ const TimerWrapper = styled.h3`
     align-items: center;
     flex-direction: row;
   }
+  @media (max-width: 375px) {
+    margin-left: 40px;
+    gap: 12px;
+  
 `;
 
 const ContentWrapper = styled.div`
@@ -146,11 +174,11 @@ const ContentWrapper = styled.div`
     background-image: url(${require("../img/GirlWithGrandma.png")});
   }
   @media (max-width: 375px) {
-    height: 700px;
-    background-position: -130px;
+    background-image: url(${require("../img/375pxGirlWithGrandma.png")});
+    height: 574px;
   }
   @media (max-width: 320px) {
-    height: 650px;
-    background-position: -140px;
+    background-image: url(${require("../img/320pxGirlWithGrandma.png")});
+    height: 490px;
   }
 `;

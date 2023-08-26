@@ -40,4 +40,8 @@ const ContentText = styled.h2`
   text-align: center;
   font-size: 22px;
   margin: 0;
+
+  @media (max-width:320px){
+    font-size:18px
+  }
 `;

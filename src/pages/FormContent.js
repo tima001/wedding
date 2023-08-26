@@ -11,27 +11,42 @@ import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import Alert from "@mui/material/Alert";
 import axios from "axios";
+
 const FormContent = () => {
   const [name, setName] = useState("");
-  const [participationStatus, setParticipationStatus] = useState("қатысамын");
-  const [open, setOpen] = useState(true);
+  const [participationStatus, setParticipationStatus] = useState("");
   const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const handleSend = () => {
-    const messageText = `Аты-жөні: ${name}  Қатысуы: ${participationStatus}`;
+    // Check if name is empty or participationStatus is not selected
+    if (!name || !participationStatus) {
+      setSubmissionStatus("error");
+      return; // Exit early if validation fails
+    }
+
+    const messageText = `${name}    ${participationStatus}`;
     axios
       .post(
         `https://api.telegram.org/bot6557386352:AAEbMqo56A1KsSkrsWfWfSICNqTah91w_ec/sendMessage?chat_id=@uzatuadamsany&text=${messageText}`
       )
       .then((response) => {
-        console.log("Message sent:", response.data);
         setSubmissionStatus("success");
+        
+        // Set a timer to clear the submissionStatus after 5 seconds
+        setTimeout(() => {
+          setSubmissionStatus(null);
+        }, 2000);
       })
       .catch((error) => {
-        console.error("Error sending message:", error);
         setSubmissionStatus("error");
+        
+        // Set a timer to clear the submissionStatus after 5 seconds
+        setTimeout(() => {
+          setSubmissionStatus(null);
+        }, 5000);
       });
   };
+
   return (
     <TextContentWrapper>
       <TitleText>
@@ -41,6 +56,7 @@ const FormContent = () => {
         жазуыңызды өтінеміз)
       </TitleText>
       <FormControl
+      id='form'
         style={{
           width: "-webkit-fill-available",
           padding: "0 40px",
@@ -48,7 +64,9 @@ const FormContent = () => {
         }}
       >
         <TextField
+          error={submissionStatus === "error"}
           required
+          helperText='Аты-жөніңізді жазыңыз'
           id="outlined-basic"
           label="Аты-жөніңіз"
           variant="standard"
@@ -60,8 +78,9 @@ const FormContent = () => {
         <FormLabel id="demo-radio-buttons-group-label">Қатысуыңыз</FormLabel>
         <RadioGroup
           aria-labelledby="demo-radio-buttons-group-label"
-          defaultValue="қатысамын"
           name="radio-buttons-group"
+          value={participationStatus}
+          onChange={(e) => setParticipationStatus(e.target.value)}
         >
           <FormControlLabel
             value="қатысамын"
@@ -75,13 +94,13 @@ const FormContent = () => {
           />
         </RadioGroup>
         {submissionStatus === "success" && (
-          <Alert severity="success" onClose={() => {}}>
+          <Alert severity="success" onClose={() => setSubmissionStatus(null)}>
             Сіздің жауабыңыз сәтті сақталды!
           </Alert>
         )}
         {submissionStatus === "error" && (
-          <Alert severity="error" onClose={() => {}}>
-            Сіздің жауабыңыз сақталмады.Тағы да байқап көріңіз!
+          <Alert severity="error" onClose={() => setSubmissionStatus(null)}>
+            Толықтай форманы толтырыңыз
           </Alert>
         )}
         <Button variant="contained" onClick={handleSend} endIcon={<SendIcon />}>
