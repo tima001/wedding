@@ -5,10 +5,10 @@ const PhotoWithHeader = () => {
   return (
     <ContentWrapper>
       <MainTitleName>
-        Асель <br /> Qyz Uzatu
+        Assel <br /> Qyz Uzatu
       </MainTitleName>
 
-      <MainTitleDate>04.09.2023</MainTitleDate>
+      <MainTitleDate>05.10.2023</MainTitleDate>
     </ContentWrapper>
   );
 };

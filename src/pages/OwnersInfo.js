@@ -20,7 +20,7 @@ const OwnersInfo = () => {
         <TitleText>
           Тойға қатысуыңызды <br /> растауыңызды сұраймыз!
         </TitleText>
-        <TitleText>04.09.2023 ж. дейін</TitleText>
+        <TitleText>05.10.2023 ж. дейін</TitleText>
       </MainContentWrapper>
     </InformationTextWrapper>
   );

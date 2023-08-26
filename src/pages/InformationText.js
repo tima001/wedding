@@ -10,7 +10,7 @@ const InformationText = () => {
       <TextContentWrapper>
         <TitleText>Той салтанаты:</TitleText>
         <ContentText>
-          04 қазан сағат <br /> 18:00-де басталады.
+          05 қазан сағат <br /> 19:00-де басталады.
         </ContentText>
       </TextContentWrapper>
       <TextContentWrapper>
