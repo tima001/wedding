@@ -85,11 +85,18 @@ const MainTitleName = styled.h3`
     margin-left: 90px;
     margin-top: 260px;
     margin-bottom:42px;
+  }
+    @media (max-width: 400px) {
+      margin-left: 74px;
+    }
     @media (max-width: 375px) {
       font-size: 42px;
-      margin-left: 65px;
+      margin-left: 60px;
       margin-top: 260px;
       margin-bottom:32px;
+    }
+    @media (max-width: 356px) {
+      margin-left: 54px;
     }
     @media (max-width: 320px) {
       font-size: 36px;
@@ -109,16 +116,7 @@ const TitleDay = styled.div`
     letter-spacing: 1.509px;
     margin: 0;
   }
-  @media (max-width: 375px) {
-    color: #fff;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    line-height: 70%;
-    letter-spacing: 1.509px;
-    margin: 0;
-  }
+  
   @media (max-width: 320px) {
     font-size: 38px;
     line-height: 70%;
@@ -142,24 +140,33 @@ const Line = styled.div`
     margin: 0;
   }
 `;
-const TimerWrapper = styled.h3`
+const TimerWrapper = styled.div`
   @media (max-width: 425px) {
     display: flex;
     margin-top: 0;
     margin-left: 60px;
+    margin-right: auto;
     gap: 20px;
     align-items: center;
     flex-direction: row;
+  }
+  @media (max-width: 410px) {
+    margin-left: 43px;
   }
   @media (max-width: 375px) {
     display: flex;
     margin-top: 0;
     margin-left: 40px;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
     flex-direction: row;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 356px) {
+    margin-left: 40px;
+    gap: 12px;
+  }
+
+  @media (max-width: 320px) {
     margin-left: 40px;
     gap: 12px;
   

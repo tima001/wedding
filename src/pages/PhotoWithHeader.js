@@ -25,17 +25,22 @@ const MainTitleName = styled.h3`
     text-align: center;
     font-weight: 100;
   }
+  @media (max-width: 387px) {
+    margin-left: 160px;
+  }
   @media (max-width: 375px) {
-    
     font-size: 64px;
-    
     margin-left: 180px;
     margin-top: 400px;
   }
+  @media (max-width: 363px) {
+    margin-left: 160px;
+  }
+  @media (max-width: 338px) {
+    margin-left: 140px;
+  }
   @media (max-width: 320px) {
-    
     font-size: 54px;
-    
     margin-left: 160px;
     margin-top: 330px;
   }
@@ -51,17 +56,22 @@ const MainTitleDate = styled.h3`
     text-align: center;
     font-weight: 100;
   }
+  @media (max-width: 387px) {
+    margin-left: 200px;
+  }
   @media (max-width: 375px) {
-    
     font-size: 64px;
-    
     margin-left: 200px;
     margin-top: 510px;
   }
+  @media (max-width: 363px) {
+    margin-left: 180px;
+  }
+  @media (max-width: 338px) {
+    margin-left: 160px;
+  }
   @media (max-width: 320px) {
-    
     font-size: 48px;
-    
     margin-left: 180px;
     margin-top: 430px;
   }

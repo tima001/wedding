@@ -104,7 +104,7 @@ const FormContent = () => {
           </Alert>
         )}
         <Button variant="contained" onClick={handleSend} endIcon={<SendIcon />}>
-          Send
+          Жіберу
         </Button>
       </FormControl>
     </TextContentWrapper>
