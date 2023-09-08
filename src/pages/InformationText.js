@@ -39,7 +39,9 @@ const TitleText = styled.h2`
   font-weight: 200;
 `;
 const ContentText = styled.h2`
-  font-family: "Nunito", sans-serif;
+  font-family: "Euclid Circular B", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 160%;
   font-weight: 200;
   text-align: center;

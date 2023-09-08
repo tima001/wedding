@@ -1,15 +1,42 @@
 @font-face {
-  font-family: 'kz-balmoral-regular';
-  src: url('./fonts/kz-balmoral-regular.ttf') format('truetype');
+  font-family: "kz-balmoral-regular";
+  src: url("./fonts/kz-balmoral-regular.ttf") format("truetype");
 
   /* Add other formats here if available */
 }
 
 body {
   margin: 0;
-  font-family: 'kz-balmoral-regular', sans-serif; /* Use a fallback font */
+  font-family: "kz-balmoral-regular", sans-serif; /* Use a fallback font */
 }
 
 code {
-  font-family: 'kz-balmoral-regular', monospace; /* Use a monospace fallback font */
+  font-family: "kz-balmoral-regular", monospace; /* Use a monospace fallback font */
+}
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+img,
+b,
+u,
+i,
+center,
+table,
+tr,
+th,
+td,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

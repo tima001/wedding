@@ -84,26 +84,26 @@ const MainTitleName = styled.h3`
     letter-spacing: 1.509px;
     margin-left: 90px;
     margin-top: 260px;
-    margin-bottom:42px;
+    margin-bottom: 42px;
   }
-    @media (max-width: 400px) {
-      margin-left: 74px;
-    }
-    
-    @media (max-width: 384px) {
-      font-size: 42px;
-      margin-left: 60px;
-      margin-top: 260px;
-      margin-bottom:32px;
-    }
-    @media (max-width: 356px) {
-      margin-left: 54px;
-    }
-    @media (max-width: 320px) {
-      font-size: 36px;
-      margin-left: 54px;
-      margin-top: 200px;
-      margin-bottom:16px;
+  @media (max-width: 400px) {
+    margin-left: 74px;
+  }
+
+  @media (max-width: 384px) {
+    font-size: 42px;
+    margin-left: 60px;
+    margin-top: 260px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 356px) {
+    margin-left: 54px;
+  }
+  @media (max-width: 320px) {
+    font-size: 36px;
+    margin-left: 54px;
+    margin-top: 200px;
+    margin-bottom: 16px;
   }
 `;
 const TitleDay = styled.div`
@@ -117,7 +117,7 @@ const TitleDay = styled.div`
     letter-spacing: 1.509px;
     margin: 0;
   }
-  
+
   @media (max-width: 320px) {
     font-size: 38px;
     line-height: 70%;

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styled from "@emotion/styled";
 import ymaps from "ymaps";
-<script src="https://api-maps.yandex.ru/2.1.77/?apikey=cd23e731-4e08-47f8-9fde-467e93ccaab3&lang=ru_RU&csp=true&" type="text/javascript"></script>
+
 const RoadMapContent = () => {
   const mapRef = useRef(null);
   ymaps
@@ -45,7 +45,9 @@ const TitleText = styled.h2`
 `;
 
 const ContentText = styled.p`
-  font-family: "Open Sans", sans-serif;
+  font-family: "Euclid Circular B", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 160%;
   font-weight: 200;
   text-align: center;

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import mainFont from '../fonts/kz-balmoral-regular.ttf'
 const PhotoWithHeader = () => {
   return (
     <ContentWrapper>
@@ -84,16 +83,17 @@ const ContentWrapper = styled.div`
   @media (max-width: 768px) {
   }
   @media (max-width: 425px) {
-  background-image: url(${require("../img/420pxGirlWithHorse.png")});
-  height:650px;
-}
-@media (max-width: 375px) {
+    background-image: url(${require("../img/mainPhoto.gif")});
+    height: 650px;
+    width: 100%;
+    background-size: 100%;
+  }
+  @media (max-width: 375px) {
     background-image: url(${require("../img/375pxGirlWithHorse.png")});
-    height:574px;
-
+    height: 574px;
   }
   @media (max-width: 320px) {
     background-image: url(${require("../img/320pxGirlWithHorse.png")});
-    height:490px;
+    height: 490px;
   }
 `;

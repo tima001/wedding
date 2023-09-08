@@ -1,21 +1,18 @@
 import React from "react";
 import styled from "@emotion/styled";
-  import Line from '../img/LineBg.png'
-  import flower from '../img/flower.png'
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-</style>;
+import Line from "../img/LineBg.png";
+import flower from "../img/flower.png";
+
 const OwnersInfo = () => {
   return (
     <InformationTextWrapper>
       <TextContentWrapper>
-        <img src={flower} style={{width: '160px' }}/>
+        <img src={flower} style={{ width: "160px" }} />
         <TitleText>Той иелері</TitleText>
         <TitleText>Жанат-Айжан</TitleText>
       </TextContentWrapper>
       {/* <TitleText>Қадірлі қонағымыз болыңыздар!</TitleText> */}
-      <img src={Line} style={{width:'100%'}}/>
+      <img src={Line} style={{ width: "100%" }} />
       <MainContentWrapper>
         <TitleText>
           Тойға қатысуыңызды <br /> растауыңызды сұраймыз!
@@ -47,14 +44,15 @@ const TitleText = styled.h2`
   letter-spacing: 2px;
   margin: 0;
   font-weight: 200;
-  @media(max-width:320px){
+  @media (max-width: 320px) {
     font-size: 36px;
-    
   }
 `;
 
 const ContentText = styled.h2`
-  font-family: "Nunito", sans-serif;
+  font-family: "Euclid Circular B", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 160%;
   font-weight: 200;
   text-align: center;
