@@ -1,17 +1,22 @@
 import React from "react";
 import styled from "@emotion/styled";
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-</style>;
+import flower from "../img/flower.png";
+
 const InvitationText = () => {
   return (
     <TextContentWrapper>
-      <TitleText>Құрметті қонақтар!</TitleText>
+      <TitleText>
+        Құрметті ағайын- туыс,
+        <br /> бауырлар, құда-жекжат, дос-жарандар!
+      </TitleText>
+      <img src={flower} style={{ width: "160px" }} />
+
       <ContentText>
-        Ciз(дер)дi аяулы қызымыз <br /> Әселдің <br /> "Қыз ұзату" тойына
-        арналған <br /> салтанатты дастарханымыздың <br />
-        қадiрлi қонағы болуға шақырамыз!
+        Сіз(дер)ді балаларымыз <br />
+        <NameText>Темирлан мен Әселдің</NameText>
+        үйлену тойына арналған салтанатты дастарханымыздың қадірлі
+        <br />
+        қонағы болуға шақырамыз!
       </ContentText>
     </TextContentWrapper>
   );
@@ -27,20 +32,30 @@ const TextContentWrapper = styled.div`
   gap: 12px;
 `;
 
-const TitleText = styled.h2`
-  font-size: 52px;
-  letter-spacing: 2px;
-  margin: 0;
+const NameText = styled.div`
+  font-family: "GreatFont";
+  color: #a11b14;
+  font-size: 42px;
+  line-height: 280%;
+  @media (max-width: 320px) {
+    font-size: 38px;
+  }
+`;
+
+const TitleText = styled.div`
+  font-family: "BKANTKZ", Arial, sans-serif;
+  color: #a11b14;
+  font-size: 19px;
+  text-align: center;
+  font-weight: 600;
   font-weight: 200;
 `;
 const ContentText = styled.h2`
-  font-family: "Euclid Circular B", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "BKANTKZ", Arial, sans-serif;
   line-height: 160%;
   font-weight: 200;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   margin: 0;
 
   @media (max-width: 320px) {

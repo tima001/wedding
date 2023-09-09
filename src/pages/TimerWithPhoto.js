@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 
 const PhotoWithHeader = () => {
-  const targetDate = new Date("2023-10-05T00:19:00Z");
+  const targetDate = new Date("2023-10-07T00:18:00Z");
 
   const getTimeLeft = (target) => {
     const now = new Date().getTime();
@@ -42,29 +42,31 @@ const PhotoWithHeader = () => {
   return (
     <ContentWrapper>
       <MainTitleName>
-        Қыз ұзату тойына дейін:
+        Той салтанатына дейін:
         <br />
       </MainTitleName>
       <TimerWrapper>
-        <TitleDay>
+        <TitleNumber>
           {timeLeft.days}
-          <br />
-          күн
-        </TitleDay>
+          <TitleInfo>күн</TitleInfo>
+        </TitleNumber>
         <Line />
-        <TitleDay>
-          {timeLeft.hours} <br /> сағат
-        </TitleDay>
+        <TitleNumber>
+          {timeLeft.hours} <br />
+          <TitleInfo> сағат</TitleInfo>{" "}
+        </TitleNumber>
         <Line />
-        <TitleDay>
+        <TitleNumber>
           {timeLeft.minutes}
-          <br /> минут
-        </TitleDay>
+          <br />
+          <TitleInfo> минут</TitleInfo>{" "}
+        </TitleNumber>
         <Line />
-        <TitleDay>
+        <TitleNumber>
           {timeLeft.seconds}
-          <br /> секунд
-        </TitleDay>
+          <br />
+          <TitleInfo> секунд</TitleInfo>
+        </TitleNumber>
       </TimerWrapper>
     </ContentWrapper>
   );
@@ -74,66 +76,42 @@ const PhotoWithHeader = () => {
 
 export default PhotoWithHeader;
 
-const MainTitleName = styled.h3`
+const MainTitleName = styled.div`
+  font-family: "BKANTKZ", Arial, sans-serif;
+  align-items: center;
+  width: 100%;
+  text-align: center;
   @media (max-width: 425px) {
     color: #fff;
-    font-size: 44px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.509px;
-    margin-left: 90px;
-    margin-top: 260px;
-    margin-bottom: 42px;
+    margin-top: 220px;
+    margin-bottom: 24px;
   }
-  @media (max-width: 400px) {
-    margin-left: 74px;
-  }
-
-  @media (max-width: 384px) {
-    font-size: 42px;
-    margin-left: 60px;
-    margin-top: 260px;
-    margin-bottom: 32px;
-  }
-  @media (max-width: 356px) {
-    margin-left: 54px;
-  }
-  @media (max-width: 320px) {
-    font-size: 36px;
-    margin-left: 54px;
-    margin-top: 200px;
-    margin-bottom: 16px;
+  @media (max-width: 375px) {
+    margin-top: 190px;
   }
 `;
-const TitleDay = styled.div`
+const TitleNumber = styled.div`
   @media (max-width: 425px) {
     color: #fff;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
+    font-family: "BKANTKZ", Arial, sans-serif;
+    font-size: 26px;
+    align-items: center;
     text-align: center;
-    line-height: 70%;
-    letter-spacing: 1.509px;
+    font-weight: 200;
     margin: 0;
   }
 
   @media (max-width: 320px) {
-    font-size: 38px;
-    line-height: 70%;
+    font-size: 24px;
     letter-spacing: 1.509px;
-    margin: 0;
   }
 `;
 const Line = styled.div`
   @media (max-width: 425px) {
-    background: rgba(255, 255, 255, 0.5);
-    height: 73px;
-    width: 2px;
-    border-radius: 10px;
-    margin: 0;
-  }
-  @media (max-width: 384px) {
     background: rgba(255, 255, 255, 0.5);
     height: 64px;
     width: 2px;
@@ -144,33 +122,30 @@ const Line = styled.div`
 const TimerWrapper = styled.div`
   @media (max-width: 425px) {
     display: flex;
-    margin-top: 0;
-    margin-left: 60px;
-    margin-right: auto;
-    gap: 20px;
+    margin: 0;
+    padding: 0 36px;
     align-items: center;
     flex-direction: row;
+    justify-content: space-around;
   }
-  @media (max-width: 410px) {
-    margin-left: 43px;
+  @media (max-width: 375px) {
+    padding: 0 24px;
   }
-  @media (max-width: 384px) {
-    display: flex;
-    margin-top: 0;
-    margin-left: 40px;
-    gap: 16px;
-    align-items: center;
-    flex-direction: row;
-  }
-  @media (max-width: 356px) {
-    margin-left: 40px;
-    gap: 12px;
-  }
-
   @media (max-width: 320px) {
-    margin-left: 40px;
-    gap: 12px;
-  
+    padding: 0 12px;
+  }
+`;
+const TitleInfo = styled.div`
+  @media (max-width: 425px) {
+    color: #fff;
+    font-family: "BKANTKZ", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+  }
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -178,15 +153,20 @@ const ContentWrapper = styled.div`
 
   @media (max-width: 425px) {
     width: 100%;
-    height: 650px;
-    background-image: url(${require("../img/GirlWithGrandma.png")});
+    background-size: 100% !important;
+    height: 525px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      url(${require("../img/WeddingPic.png")});
+    background-repeat: no-repeat;
   }
   @media (max-width: 375px) {
-    background-image: url(${require("../img/375pxGirlWithGrandma.png")});
-    height: 574px;
+    height: 464px;
   }
   @media (max-width: 320px) {
-    background-image: url(${require("../img/320pxGirlWithGrandma.png")});
-    height: 490px;
+    height: 395px;
   }
 `;

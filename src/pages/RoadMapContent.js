@@ -1,18 +1,23 @@
 import React, { useRef } from "react";
 import styled from "@emotion/styled";
 import ymaps from "ymaps";
+import twogis from "../img/2gis.png";
 
 const RoadMapContent = () => {
+  const handleTwoGisClick = () => {
+    // Open the URL in a new tab when the image is clicked
+    window.open("https://go.2gis.com/xdce4", "_blank");
+  };
   const mapRef = useRef(null);
   ymaps
     .load()
     .then((maps) => {
       const mapInstance = new maps.Map(mapRef.current, {
-        center: [42.9043219, 71.3375716],
-        zoom: 15,
+        center: [42.875362, 71.366954],
+        zoom: 18,
       });
 
-      const marker = new maps.Placemark([42.9043219, 71.3375716]);
+      const marker = new maps.Placemark([42.875362, 71.366954]);
 
       mapInstance.geoObjects.add(marker);
     })
@@ -20,10 +25,11 @@ const RoadMapContent = () => {
 
   return (
     <TextContentWrapper>
-      <TitleText>Қалай жетуге болады:</TitleText>
+      <TitleText>Қалай жетуге болады?!</TitleText>
       <ContentText>
         Ciзге ыңғайлы болу үшін <br /> осы картаны қолданыңыз
       </ContentText>
+      <TwoGis onClick={handleTwoGisClick} src={twogis} />
       <MapContainer ref={mapRef}></MapContainer>
     </TextContentWrapper>
   );
@@ -38,20 +44,22 @@ const TextContentWrapper = styled.div`
 `;
 
 const TitleText = styled.h2`
-  font-size: 52px;
-  letter-spacing: 2px;
+  font-family: "GreatFont";
+  font-size: 38px;
   margin: 0;
+  margin-bottom: 12px;
   font-weight: 200;
+  @media (max-width: 320px) {
+    font-size: 34px;
+  }
 `;
 
 const ContentText = styled.p`
-  font-family: "Euclid Circular B", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "BKANTKZ", Arial, sans-serif;
+  font-size: 18px;
   line-height: 160%;
   font-weight: 200;
   text-align: center;
-  font-size: 22px;
   margin: 0;
   margin-bottom: 40px;
 `;
@@ -59,6 +67,11 @@ const ContentText = styled.p`
 const MapContainer = styled.div`
   width: 100%;
   height: 400px;
+`;
+const TwoGis = styled.img`
+  width: 48px;
+  height: 48px;
+  margin-bottom: 36px;
 `;
 
 export default RoadMapContent;

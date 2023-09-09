@@ -10,13 +10,15 @@ const InformationText = () => {
       <TextContentWrapper>
         <TitleText>Той салтанаты:</TitleText>
         <ContentText>
-          05 қазан сағат <br /> 19:00-де басталады.
+          07 қазан сағат <br /> 18:00-де Беташар салтанаты,
+          <br /> 19:00-де Той салтанаты басталады.
         </ContentText>
       </TextContentWrapper>
       <TextContentWrapper>
         <TitleText>Мекен жайымыз:</TitleText>
         <ContentText>
-          Тараз қаласы <br /> Әль-Фараби көшесі 1 <br /> "Бекзат" рестораны
+          Тараз қаласы <br />
+          Ташкентская ​көшесі 268 <br /> "Golden Hall " рестораны
         </ContentText>
       </TextContentWrapper>
     </InformationTextWrapper>
@@ -33,19 +35,19 @@ const TextContentWrapper = styled.div`
 `;
 
 const TitleText = styled.h2`
-  font-size: 52px;
+  font-family: "GreatFont";
+  font-size: 38px;
   letter-spacing: 2px;
   margin: 0;
   font-weight: 200;
 `;
 const ContentText = styled.h2`
-  font-family: "Euclid Circular B", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "BKANTKZ", Arial, sans-serif;
+  color: #a11b14;
+  font-size: 18px;
   line-height: 160%;
   font-weight: 200;
   text-align: center;
-  font-size: 22px;
   margin: 0;
 `;
 const InformationTextWrapper = styled.div`

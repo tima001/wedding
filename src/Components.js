@@ -12,17 +12,32 @@ import line from "./img/LineBg.png";
 function Components() {
   return (
     <ContentWrapper>
-
       <PhotoWithHeader />
-      <img src={line} alt="Background line " />
+      <img
+        src={line}
+        style={{ width: "auto", margin: "0 12px" }}
+        alt="Background line "
+      />
       <InvitationText />
-      <img src={line} alt="Background line " />
+      <img
+        src={line}
+        style={{ width: "auto", margin: "0 12px" }}
+        alt="Background line "
+      />
       <InformationText />
-      <img src={line} alt="Background line " />
+      <img
+        src={line}
+        style={{ width: "auto", margin: "0 12px" }}
+        alt="Background line "
+      />
       <RoadMapContent />
       <TimerWithPhoto />
       <OwnersInfo />
-      <img src={line} alt="Background line " />
+      <img
+        src={line}
+        style={{ width: "auto", margin: "0 12px" }}
+        alt="Background line "
+      />
       <FormContent />
     </ContentWrapper>
   );
@@ -31,12 +46,12 @@ function Components() {
 export default Components;
 
 const ContentWrapper = styled.div`
-position: relative;
-top: -50px;
+  position: relative;
+  top: -50px;
   display: flex;
   flex-direction: column;
-  gap:48px;
-  background-image: url(${require("./img/425bg.png")});
+  gap: 48px;
+  /* background-image: url(${require("./img/425bg.png")}); */
   background-repeat: repeat;
   background-size: cover;
 

@@ -27,7 +27,7 @@ const FormContent = () => {
     const messageText = `${name}    ${participationStatus}`;
     axios
       .post(
-        `https://api.telegram.org/bot6557386352:AAEbMqo56A1KsSkrsWfWfSICNqTah91w_ec/sendMessage?chat_id=@uzatuadamsany&text=${messageText}  `
+        `https://api.telegram.org/bot6557386352:AAEbMqo56A1KsSkrsWfWfSICNqTah91w_ec/sendMessage?chat_id=@weddingadamsany&text=${messageText}  `
       )
       .then((response) => {
         setSubmissionStatus("success");
@@ -51,7 +51,12 @@ const FormContent = () => {
   return (
     <TextContentWrapper>
       {isResponseSent ? (
-        <Button style={{width:'90%', marginLeft: 'auto', marginRight: 'auto'}} fullWidth={true} color='success' variant="contained">
+        <Button
+          style={{ width: "90%", marginLeft: "auto", marginRight: "auto" }}
+          fullWidth={true}
+          color="success"
+          variant="contained"
+        >
           Сіздің жауабыңыз жіберілді!
         </Button>
       ) : (
@@ -63,7 +68,7 @@ const FormContent = () => {
             жазуыңызды өтінеміз)
           </TitleText>
           <FormControl
-            id='form'
+            id="form"
             style={{
               width: "-webkit-fill-available",
               padding: "0 40px",
@@ -73,7 +78,7 @@ const FormContent = () => {
             <TextField
               error={submissionStatus === "error"}
               required
-              helperText='Аты-жөніңізді жазыңыз'
+              helperText="Аты-жөніңізді жазыңыз"
               id="outlined-basic"
               label="Аты-жөніңіз"
               variant="standard"
@@ -82,7 +87,9 @@ const FormContent = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <FormLabel id="demo-radio-buttons-group-label">Қатысуыңыз</FormLabel>
+            <FormLabel id="demo-radio-buttons-group-label">
+              Қатысуыңыз
+            </FormLabel>
             <RadioGroup
               aria-labelledby="demo-radio-buttons-group-label"
               name="radio-buttons-group"
@@ -101,7 +108,10 @@ const FormContent = () => {
               />
             </RadioGroup>
             {submissionStatus === "success" && (
-              <Alert severity="success" onClose={() => setSubmissionStatus(null)}>
+              <Alert
+                severity="success"
+                onClose={() => setSubmissionStatus(null)}
+              >
                 Сіздің жауабыңыз сәтті сақталды!
               </Alert>
             )}
@@ -110,7 +120,11 @@ const FormContent = () => {
                 Толықтай форманы толтырыңыз
               </Alert>
             )}
-            <Button variant="contained" onClick={handleSend} endIcon={<SendIcon />}>
+            <Button
+              variant="contained"
+              onClick={handleSend}
+              endIcon={<SendIcon />}
+            >
               Жіберу
             </Button>
           </FormControl>
@@ -130,10 +144,10 @@ const TextContentWrapper = styled.div`
 `;
 
 const TitleText = styled.h2`
-  letter-spacing: 2px;
+  font-family: "BKANTKZ", Arial, sans-serif;
+  font-size: 18px;
   text-align: start;
   margin: 0;
-  font-size: 32px;
   font-weight: 200;
   padding-left: 40px;
 `;

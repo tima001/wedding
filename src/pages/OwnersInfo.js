@@ -9,15 +9,16 @@ const OwnersInfo = () => {
       <TextContentWrapper>
         <img src={flower} style={{ width: "160px" }} />
         <TitleText>Той иелері</TitleText>
-        <TitleText>Жанат-Айжан</TitleText>
+        <TitleName>Бахытжан-Жанар</TitleName>
       </TextContentWrapper>
       {/* <TitleText>Қадірлі қонағымыз болыңыздар!</TitleText> */}
       <img src={Line} style={{ width: "100%" }} />
       <MainContentWrapper>
         <TitleText>
           Тойға қатысуыңызды <br /> растауыңызды сұраймыз!
+          <br />
+          07.10.2023 ж. дейін
         </TitleText>
-        <TitleText>05.10.2023 ж. дейін</TitleText>
       </MainContentWrapper>
     </InformationTextWrapper>
   );
@@ -30,6 +31,7 @@ const TextContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 `;
 const MainContentWrapper = styled.div`
   display: flex;
@@ -39,14 +41,26 @@ const MainContentWrapper = styled.div`
   gap: 12px;
 `;
 
-const TitleText = styled.h2`
-  font-size: 42px;
+const TitleText = styled.div`
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-family: "BKANTKZ", Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  line-height: 150%;
+  font-weight: 200;
+`;
+const TitleName = styled.div`
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-family: "BKANTKZ", Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
   letter-spacing: 2px;
   margin: 0;
   font-weight: 200;
-  @media (max-width: 320px) {
-    font-size: 36px;
-  }
 `;
 
 const ContentText = styled.h2`
@@ -64,4 +78,5 @@ const InformationTextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  width: 100%;
 `;

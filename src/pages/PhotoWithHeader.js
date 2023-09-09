@@ -3,76 +3,76 @@ import styled from "@emotion/styled";
 const PhotoWithHeader = () => {
   return (
     <ContentWrapper>
-      <MainTitleName>
-        Assel <br /> Qyz Uzatu
-      </MainTitleName>
+      <TFirstLetter>Т</TFirstLetter>
+      <AFirstLetter>А</AFirstLetter>
+      <MainTitleName>Темирлан & Әсел</MainTitleName>
 
-      <MainTitleDate>05.10.2023</MainTitleDate>
+      <MainTitleDate>07.10.2023</MainTitleDate>
     </ContentWrapper>
   );
 };
 
 export default PhotoWithHeader;
 
-const MainTitleName = styled.h3`
+const MainTitleName = styled.div`
+  font-family: "Romulc";
+  width: 100%;
+  align-items: center;
   @media (max-width: 425px) {
+    font-weight: 200;
     position: absolute;
-    font-size: 72px;
+    font-size: 26px;
     color: #fff;
-    margin-left: 190px;
+
     margin-top: 460px;
     text-align: center;
-    font-weight: 100;
-  }
-  @media (max-width: 387px) {
-    margin-left: 160px;
-  }
-  @media (max-width: 375px) {
-    font-size: 64px;
-    margin-left: 180px;
-    margin-top: 400px;
-  }
-  @media (max-width: 363px) {
-    margin-left: 160px;
-  }
-  @media (max-width: 338px) {
-    margin-left: 140px;
   }
   @media (max-width: 320px) {
-    font-size: 54px;
-    margin-left: 160px;
-    margin-top: 330px;
+    font-size: 24px;
+    margin-top: 420px;
+  }
+`;
+const TFirstLetter = styled.div`
+  font-family: "GreatFont";
+  @media (max-width: 425px) {
+    font-weight: 200;
+    padding: 0 20px;
+    position: absolute;
+    font-size: 64px;
+    color: #fff;
+    margin-top: 24px;
+    text-align: start;
+  }
+`;
+const AFirstLetter = styled.div`
+  font-family: "GreatFont";
+  /* width: 100%; */
+  @media (max-width: 425px) {
+    font-weight: 200;
+    padding: 0 80px;
+    position: absolute;
+    font-size: 64px;
+    color: #fff;
+    margin-top: 88px;
+    text-align: start;
   }
 `;
 
-const MainTitleDate = styled.h3`
+const MainTitleDate = styled.div`
   @media (max-width: 425px) {
     position: absolute;
-    font-size: 64px;
+    font-family: "Romulc", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 200;
     color: #fff;
-    margin-left: 224px;
-    margin-top: 580px;
-    text-align: center;
-    font-weight: 100;
-  }
-  @media (max-width: 387px) {
-    margin-left: 200px;
-  }
-  @media (max-width: 375px) {
-    font-size: 64px;
-    margin-left: 200px;
+    width: 100%;
+    align-items: center;
     margin-top: 510px;
-  }
-  @media (max-width: 363px) {
-    margin-left: 180px;
-  }
-  @media (max-width: 338px) {
-    margin-left: 160px;
+    text-align: center;
   }
   @media (max-width: 320px) {
-    font-size: 48px;
-    margin-left: 180px;
-    margin-top: 430px;
+    font-size: 26px;
+    margin-top: 460px;
   }
 `;
 
@@ -83,17 +83,21 @@ const ContentWrapper = styled.div`
   @media (max-width: 768px) {
   }
   @media (max-width: 425px) {
-    background-image: url(${require("../img/mainPhoto.gif")});
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(${require("../img/mainPhoto.gif")});
     height: 650px;
     width: 100%;
     background-size: 100%;
   }
   @media (max-width: 375px) {
-    background-image: url(${require("../img/375pxGirlWithHorse.png")});
-    height: 574px;
+    background-size: 100% !important;
+    height: 580px;
   }
   @media (max-width: 320px) {
-    background-image: url(${require("../img/320pxGirlWithHorse.png")});
-    height: 490px;
+    height: 520px;
   }
 `;

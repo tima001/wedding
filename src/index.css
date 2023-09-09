@@ -1,8 +1,22 @@
 @font-face {
   font-family: "kz-balmoral-regular";
   src: url("./fonts/kz-balmoral-regular.ttf") format("truetype");
-
-  /* Add other formats here if available */
+}
+@font-face {
+  font-family: "KZ_Days";
+  src: url("./fonts/KZ_Days.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Romulc";
+  src: url("./fonts/Romulc.woff") format("woff");
+}
+@font-face {
+  font-family: "BKANTKZ";
+  src: url("./fonts/BKANTKZ.woff") format("woff");
+}
+@font-face {
+  font-family: "GreatFont";
+  src: url("./fonts/KZPFChampionScriptPr.woff") format("woff");
 }
 
 body {
@@ -11,7 +25,7 @@ body {
 }
 
 code {
-  font-family: "kz-balmoral-regular", monospace; /* Use a monospace fallback font */
+  font-family: "BKANTKZ", Arial, sans-serif;
 }
 div,
 span,
