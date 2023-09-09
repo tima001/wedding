@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/wedding/static/css/main.d90db697.css",
+    "main.js": "/wedding/static/js/main.b05a985e.js",
+    "static/js/787.4ff3cea1.chunk.js": "/wedding/static/js/787.4ff3cea1.chunk.js",
+    "static/media/mainPhoto.gif": "/wedding/static/media/mainPhoto.a0e4c0eb54920c8d8a89.gif",
+    "static/media/dudeontheguitarHey Monro-Boiy Bulgan.mp3": "/wedding/static/media/dudeontheguitarHey Monro-Boiy Bulgan.8933c828de1aa758e20d.mp3",
+    "static/media/KZPFChampionScriptPr.woff": "/wedding/static/media/KZPFChampionScriptPr.c969debe842ccbe7bfb5.woff",
+    "static/media/WeddingPic.png": "/wedding/static/media/WeddingPic.fc6938857ca1f860acdd.png",
+    "static/media/425bg.png": "/wedding/static/media/425bg.095bb44a0712ec427b6f.png",
+    "static/media/KZ_Days.ttf": "/wedding/static/media/KZ_Days.3d02ef62c3b07a40f823.ttf",
+    "static/media/BKANTKZ.woff": "/wedding/static/media/BKANTKZ.99d520659faa3b7ff7bd.woff",
+    "static/media/kz-balmoral-regular.ttf": "/wedding/static/media/kz-balmoral-regular.222d95588b1ee277857b.ttf",
+    "static/media/LineBg.png": "/wedding/static/media/LineBg.f1e0ca92fe735e29776b.png",
+    "static/media/Romulc.woff": "/wedding/static/media/Romulc.7abe3b8a8422dbf308d5.woff",
+    "static/media/2gis.png": "/wedding/static/media/2gis.a5dcf1f67686c8b5e520.png",
+    "index.html": "/wedding/index.html",
+    "main.d90db697.css.map": "/wedding/static/css/main.d90db697.css.map",
+    "main.b05a985e.js.map": "/wedding/static/js/main.b05a985e.js.map",
+    "787.4ff3cea1.chunk.js.map": "/wedding/static/js/787.4ff3cea1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d90db697.css",
+    "static/js/main.b05a985e.js"
+  ]
+}
