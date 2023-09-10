@@ -13,31 +13,15 @@ function Components() {
   return (
     <ContentWrapper>
       <PhotoWithHeader />
-      <img
-        src={line}
-        style={{ width: "auto", margin: "0 12px" }}
-        alt="Background line "
-      />
+      <BackgroundLine src={line} alt="Background line " />
       <InvitationText />
-      <img
-        src={line}
-        style={{ width: "auto", margin: "0 12px" }}
-        alt="Background line "
-      />
+      <BackgroundLine src={line} alt="Background line " />
       <InformationText />
-      <img
-        src={line}
-        style={{ width: "auto", margin: "0 12px" }}
-        alt="Background line "
-      />
+      <BackgroundLine src={line} alt="Background line " />
       <RoadMapContent />
       <TimerWithPhoto />
       <OwnersInfo />
-      <img
-        src={line}
-        style={{ width: "auto", margin: "0 12px" }}
-        alt="Background line "
-      />
+      <BackgroundLine src={line} alt="Background line " />
       <FormContent />
     </ContentWrapper>
   );
@@ -47,7 +31,7 @@ export default Components;
 
 const ContentWrapper = styled.div`
   position: relative;
-  top: -50px;
+  top: -64px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -58,4 +42,7 @@ const ContentWrapper = styled.div`
   @media (max-width: 425px) {
     background-size: auto;
   }
+`;
+const BackgroundLine = styled.img`
+  width: 100%;
 `;

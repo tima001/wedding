@@ -1,8 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
-import MyMusic from '../music/dudeontheguitarHey Monro-Boiy Bulgan.mp3';
-import VolumeOffOutlinedIcon from '@mui/icons-material/VolumeOffOutlined';
-import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
+import MyMusic from "../music/dudeontheguitarHey Monro-Boiy Bulgan.mp3";
 import styled from "@emotion/styled";
+import { css, keyframes } from "@emotion/react";
+import { MusicNotesSimple, Play } from "@phosphor-icons/react";
+import PlayMe from "../img/white_bold_circle.png";
+
+// Define the keyframes animation outside of the component
+const myanimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+`;
 
 const CustomAudioPlayer = () => {
   const audioRef = useRef(null);
@@ -32,21 +44,22 @@ const CustomAudioPlayer = () => {
   return (
     <MuteWrapper>
       <audio ref={audioRef} src={MyMusic}></audio>
+
+      <PlayMeImg src={PlayMe} />
       <CircleForIcon>
         {isMuted ? (
-          <VolumeOffOutlinedIcon
-            style={{ fontSize: '30px', color: '#4598F7' }}
+          <MusicNotesSimple
             onClick={toggleMute}
-          >
-            Unmute
-          </VolumeOffOutlinedIcon>
-        ) : (
-          <VolumeUpOutlinedIcon
-            style={{ fontSize: '30px', color: '#4598F7' }}
-            onClick={toggleMute}
+            color="#40675A"
+            size={30}
+            weight="fill"
           >
             Mute
-          </VolumeUpOutlinedIcon>
+          </MusicNotesSimple>
+        ) : (
+          <Play onClick={toggleMute} color="#40675A" size={30} weight="fill">
+            UnMute
+          </Play>
         )}
       </CircleForIcon>
     </MuteWrapper>
@@ -55,14 +68,35 @@ const CustomAudioPlayer = () => {
 
 export default CustomAudioPlayer;
 
+const PlayMeImg = styled.img`
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  right: 4px;
+  // Apply the keyframes animation to the styled component
+  ${css`
+    animation: ${myanimation} 5s infinite linear;
+  `}
+
+  backface-visibility: hidden;
+`;
+
 const CircleForIcon = styled.div`
   @media (max-width: 425px) {
+    z-index: 100;
+    position: absolute;
+    margin-top: 13px;
+    position: sticky;
+    margin-right: 6px;
     display: flex;
     align-items: center;
-    padding: 4px;
-    border: 3px solid;
+    padding: 6px;
+    border: 3px solid #40675a;
     border-radius: 40px;
-    background: #fff;
+    background: transparent;
   }
 `;
 
@@ -72,7 +106,6 @@ const MuteWrapper = styled.div`
   padding-right: 12px;
   z-index: 10;
   display: flex;
-  color: #4598f7;
   @media (max-width: 425px) {
     top: 400px;
   }
