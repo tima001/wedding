@@ -1,20 +1,15 @@
 import "./App.css";
 import CustomAudioPlayer from "./pages/CustomAudioPlayer";
 import styled from "@emotion/styled";
-import Components from './Components'
-
+import Components from "./Components";
 
 function App() {
-  return(
+  return (
     <>
       <CustomAudioPlayer />
-      <Components/>
+      <Components />
     </>
-      
   );
 }
 
 export default App;
-
-
-
