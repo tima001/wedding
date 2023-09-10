@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding/static/css/main.d90db697.css",
-    "main.js": "/wedding/static/js/main.ef008f2a.js",
+    "main.js": "/wedding/static/js/main.3056482d.js",
     "static/js/787.4ff3cea1.chunk.js": "/wedding/static/js/787.4ff3cea1.chunk.js",
     "static/media/mainPhoto.gif": "/wedding/static/media/mainPhoto.a0e4c0eb54920c8d8a89.gif",
     "static/media/dudeontheguitarHey Monro-Boiy Bulgan.mp3": "/wedding/static/media/dudeontheguitarHey Monro-Boiy Bulgan.8933c828de1aa758e20d.mp3",
@@ -14,13 +14,14 @@
     "static/media/LineBg.png": "/wedding/static/media/LineBg.f1e0ca92fe735e29776b.png",
     "static/media/Romulc.woff": "/wedding/static/media/Romulc.7abe3b8a8422dbf308d5.woff",
     "static/media/2gis.png": "/wedding/static/media/2gis.a5dcf1f67686c8b5e520.png",
+    "static/media/white_bold_circle.png": "/wedding/static/media/white_bold_circle.bbc03b8629772ddee6ad.png",
     "index.html": "/wedding/index.html",
     "main.d90db697.css.map": "/wedding/static/css/main.d90db697.css.map",
-    "main.ef008f2a.js.map": "/wedding/static/js/main.ef008f2a.js.map",
+    "main.3056482d.js.map": "/wedding/static/js/main.3056482d.js.map",
     "787.4ff3cea1.chunk.js.map": "/wedding/static/js/787.4ff3cea1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d90db697.css",
-    "static/js/main.ef008f2a.js"
+    "static/js/main.3056482d.js"
   ]
 }
