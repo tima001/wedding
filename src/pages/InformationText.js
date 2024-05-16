@@ -10,7 +10,7 @@ const InformationText = () => {
       <TextContentWrapper>
         <TitleText>Той салтанаты:</TitleText>
         <ContentText>
-          07 қазан сағат <br /> 18:00-де Беташар салтанаты,
+          25 қазан сағат
           <br /> 19:00-де Той салтанаты басталады.
         </ContentText>
       </TextContentWrapper>
@@ -18,7 +18,7 @@ const InformationText = () => {
         <TitleText>Мекен жайымыз:</TitleText>
         <ContentText>
           Тараз қаласы <br />
-          Ташкентская ​көшесі 268 <br /> "Golden Hall " рестораны
+            Проспект Жамбыла, 182 <br /> "Хан сарайы" рестораны
         </ContentText>
       </TextContentWrapper>
     </InformationTextWrapper>

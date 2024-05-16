@@ -6,18 +6,18 @@ import twogis from "../img/2gis.png";
 const RoadMapContent = () => {
   const handleTwoGisClick = () => {
     // Open the URL in a new tab when the image is clicked
-    window.open("https://go.2gis.com/xdce4", "_blank");
+    window.open("https://go.2gis.com/9hxt5", "_blank");
   };
   const mapRef = useRef(null);
   ymaps
     .load()
     .then((maps) => {
       const mapInstance = new maps.Map(mapRef.current, {
-        center: [42.875362, 71.366954],
+        center: [42.897154, 71.359884],
         zoom: 18,
       });
 
-      const marker = new maps.Placemark([42.875362, 71.366954]);
+      const marker = new maps.Placemark([42.897154, 71.359884]);
 
       mapInstance.geoObjects.add(marker);
     })

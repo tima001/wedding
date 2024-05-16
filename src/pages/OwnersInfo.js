@@ -9,7 +9,7 @@ const OwnersInfo = () => {
       <TextContentWrapper>
         <img src={flower} style={{ width: "160px" }} />
         <TitleText>Той иелері</TitleText>
-        <TitleName>Бахытжан-Жанар</TitleName>
+        <TitleName>Бейбіт & Гаухар</TitleName>
       </TextContentWrapper>
       {/* <TitleText>Қадірлі қонағымыз болыңыздар!</TitleText> */}
       <img src={Line} style={{ width: "100%" }} />

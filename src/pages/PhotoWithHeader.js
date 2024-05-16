@@ -3,9 +3,9 @@ import styled from "@emotion/styled";
 const PhotoWithHeader = () => {
   return (
     <ContentWrapper>
-      <TFirstLetter>Т</TFirstLetter>
-      <AFirstLetter>А</AFirstLetter>
-      <MainTitleName>Темирлан & Әсел</MainTitleName>
+      <TFirstLetter>Ф</TFirstLetter>
+      <AFirstLetter>И</AFirstLetter>
+      <MainTitleName>Фараби & Инабат</MainTitleName>
 
       <MainTitleDate>07.10.2023</MainTitleDate>
     </ContentWrapper>

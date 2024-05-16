@@ -5,18 +5,15 @@ import flower from "../img/flower.png";
 const InvitationText = () => {
   return (
     <TextContentWrapper>
-      <TitleText>
-        Құрметті ағайын- туыс,
-        <br /> бауырлар, құда-жекжат, дос-жарандар!
-      </TitleText>
-      <img src={flower} style={{ width: "160px" }} />
+        <TitleText>
+            Құрметті қонақтар!
+        </TitleText>
+        <img src={flower} style={{ width: "160px" }} />
 
       <ContentText>
-        Сіз(дер)ді балаларымыз <br />
-        <NameText>Темирлан мен Әселдің</NameText>
-        үйлену тойына арналған салтанатты дастарханымыздың қадірлі
-        <br />
-        қонағы болуға шақырамыз!
+          Сіздерді ұлымыз <br />
+        <NameText>Фараби</NameText> мен келініміз <NameText>Инабат</NameText>
+          екеуінің үйлену тойына арналған<br/> ақ дастарханымыздың қадірлі<br/> қонағы болуға шақырамыз!
       </ContentText>
     </TextContentWrapper>
   );
@@ -36,7 +33,7 @@ const NameText = styled.div`
   font-family: "GreatFont";
   color: #a11b14;
   font-size: 42px;
-  line-height: 280%;
+  line-height: 240%;
   @media (max-width: 320px) {
     font-size: 38px;
   }
@@ -45,7 +42,7 @@ const NameText = styled.div`
 const TitleText = styled.div`
   font-family: "BKANTKZ", Arial, sans-serif;
   color: #a11b14;
-  font-size: 19px;
+  font-size: 24px;
   text-align: center;
   font-weight: 600;
   font-weight: 200;
