@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1525bbcc.css",
-    "main.js": "/static/js/main.8cf2a1f9.js",
+    "main.js": "/static/js/main.8d8f4c0b.js",
     "static/js/787.4ff3cea1.chunk.js": "/static/js/787.4ff3cea1.chunk.js",
     "static/media/main_bg.jpeg": "/static/media/main_bg.fe05d150d372d5bac51b.jpeg",
     "static/media/dudeontheguitarHey Monro-Boiy Bulgan.mp3": "/static/media/dudeontheguitarHey Monro-Boiy Bulgan.8933c828de1aa758e20d.mp3",
@@ -17,11 +17,11 @@
     "static/media/white_bold_circle.png": "/static/media/white_bold_circle.bbc03b8629772ddee6ad.png",
     "index.html": "/index.html",
     "main.1525bbcc.css.map": "/static/css/main.1525bbcc.css.map",
-    "main.8cf2a1f9.js.map": "/static/js/main.8cf2a1f9.js.map",
+    "main.8d8f4c0b.js.map": "/static/js/main.8d8f4c0b.js.map",
     "787.4ff3cea1.chunk.js.map": "/static/js/787.4ff3cea1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1525bbcc.css",
-    "static/js/main.8cf2a1f9.js"
+    "static/js/main.8d8f4c0b.js"
   ]
 }
