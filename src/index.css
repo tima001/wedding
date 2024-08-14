@@ -17,6 +17,9 @@
 @font-face {
   font-family: "GreatFont";
   src: url("./fonts/KZPFChampionScriptPr.woff") format("woff");
+}@font-face {
+  font-family: "GreatFont2";
+  src: url("./fonts/ofont.ru_Miama Nueva.ttf") format("truetype");
 }
 
 body {

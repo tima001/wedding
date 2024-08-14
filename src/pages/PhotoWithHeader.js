@@ -3,11 +3,11 @@ import styled from "@emotion/styled";
 const PhotoWithHeader = () => {
   return (
     <ContentWrapper>
-      <TFirstLetter>Ф</TFirstLetter>
-      <AFirstLetter>И</AFirstLetter>
-      <MainTitleName>Фараби & Инабат</MainTitleName>
+      {/*<TFirstLetter>Ф</TFirstLetter>*/}
+      {/*<AFirstLetter>И</AFirstLetter>*/}
+      <MainTitleName>Әділет & Жанель</MainTitleName>
 
-      <MainTitleDate>07.10.2023</MainTitleDate>
+      <MainTitleDate>27.10.2024</MainTitleDate>
     </ContentWrapper>
   );
 };
@@ -88,10 +88,10 @@ const ContentWrapper = styled.div`
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.5) 100%
       ),
-      url(${require("../img/mainPhoto.gif")});
+      url(${require("../img/main_bg.jpeg")});
     height: 650px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
   }
   @media (max-width: 375px) {
     background-size: 100% !important;

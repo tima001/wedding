@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 
 const PhotoWithHeader = () => {
-  const targetDate = new Date("2024-05-20T00:19:00Z");
+  const targetDate = new Date("2024-10-27T00:19:00Z");
 
   const getTimeLeft = (target) => {
     const now = new Date().getTime();

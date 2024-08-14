@@ -9,7 +9,7 @@ const OwnersInfo = () => {
       <TextContentWrapper>
         <img src={flower} style={{ width: "160px" }} />
         <TitleText>Той иелері</TitleText>
-        <TitleName>Бейбіт & Гаухар</TitleName>
+        <TitleName>Ерлан & Жанна</TitleName>
       </TextContentWrapper>
       {/* <TitleText>Қадірлі қонағымыз болыңыздар!</TitleText> */}
       <img src={Line} style={{ width: "100%" }} />
@@ -17,7 +17,7 @@ const OwnersInfo = () => {
         <TitleText>
           Тойға қатысуыңызды <br /> растауыңызды сұраймыз!
           <br />
-          07.10.2023 ж. дейін
+          27.10.2024 ж. дейін
         </TitleText>
       </MainContentWrapper>
     </InformationTextWrapper>

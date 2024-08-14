@@ -12,7 +12,7 @@ const InvitationText = () => {
 
       <ContentText>
           Сіздерді ұлымыз <br />
-        <NameText>Фараби</NameText> мен келініміз <NameText>Инабат</NameText>
+        <NameText>Әділет</NameText> пен келініміз <NameText>Жанель</NameText>
           екеуінің үйлену тойына арналған<br/> ақ дастарханымыздың қадірлі<br/> қонағы болуға шақырамыз!
       </ContentText>
     </TextContentWrapper>
@@ -30,9 +30,9 @@ const TextContentWrapper = styled.div`
 `;
 
 const NameText = styled.div`
-  font-family: "GreatFont";
+  font-family: "GreatFont2";
   color: #a11b14;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 240%;
   @media (max-width: 320px) {
     font-size: 38px;
