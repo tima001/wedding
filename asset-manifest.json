@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.1525bbcc.css",
-    "main.js": "/static/js/main.8d8f4c0b.js",
+    "main.css": "/static/css/main.21c3ede0.css",
+    "main.js": "/static/js/main.9c6c046e.js",
     "static/js/787.4ff3cea1.chunk.js": "/static/js/787.4ff3cea1.chunk.js",
     "static/media/main_bg.jpeg": "/static/media/main_bg.fe05d150d372d5bac51b.jpeg",
     "static/media/dudeontheguitarHey Monro-Boiy Bulgan.mp3": "/static/media/dudeontheguitarHey Monro-Boiy Bulgan.8933c828de1aa758e20d.mp3",
     "static/media/KZPFChampionScriptPr.woff": "/static/media/KZPFChampionScriptPr.c969debe842ccbe7bfb5.woff",
     "static/media/WeddingPic.png": "/static/media/WeddingPic.fc6938857ca1f860acdd.png",
+    "static/media/ofont.ru_Miama Nueva.ttf": "/static/media/ofont.ru_Miama Nueva.9837b9f4c96faa8265db.ttf",
     "static/media/425bg.png": "/static/media/425bg.095bb44a0712ec427b6f.png",
     "static/media/KZ_Days.ttf": "/static/media/KZ_Days.3d02ef62c3b07a40f823.ttf",
     "static/media/BKANTKZ.woff": "/static/media/BKANTKZ.99d520659faa3b7ff7bd.woff",
@@ -16,12 +17,12 @@
     "static/media/2gis.png": "/static/media/2gis.a5dcf1f67686c8b5e520.png",
     "static/media/white_bold_circle.png": "/static/media/white_bold_circle.bbc03b8629772ddee6ad.png",
     "index.html": "/index.html",
-    "main.1525bbcc.css.map": "/static/css/main.1525bbcc.css.map",
-    "main.8d8f4c0b.js.map": "/static/js/main.8d8f4c0b.js.map",
+    "main.21c3ede0.css.map": "/static/css/main.21c3ede0.css.map",
+    "main.9c6c046e.js.map": "/static/js/main.9c6c046e.js.map",
     "787.4ff3cea1.chunk.js.map": "/static/js/787.4ff3cea1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1525bbcc.css",
-    "static/js/main.8d8f4c0b.js"
+    "static/css/main.21c3ede0.css",
+    "static/js/main.9c6c046e.js"
   ]
 }
